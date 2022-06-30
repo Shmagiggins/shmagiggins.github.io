@@ -1,0 +1,57 @@
+/*This section declares variables for the entire document using the ":root" CSS selector. Variables are case sensitive and must be preceeded by "--". Once added, variables can be called with "var(--VARIABLE)".*/
+:root{
+  --ui-color:#331c33;
+  --ui-lighter:#281a27;
+  --ui-lightest:#3d293c;
+  --ui-darker:#221322;
+  --ui-darkest:#120a12;
+  --text-color:#c198be;
+  --text-lighter:#eaa4e5;
+  --text-lightest:#dec8dc;
+  --text-darker:#887287;
+  --text-darkest:#5a3e58;
+  --name-color:#448fd1;
+  --commissions-color:#33cc66;
+  --nsfw-color:#ff4444;
+  --twitter-color:#1da1f2;
+  --instagram-color:#dd2a7b;
+  --patreon-color:#ff424d;
+}
+
+/*This section uses the asterisk CSS selector to style all elements.*/
+*{box-sizing:border-box; border-radius:1em;}
+
+/*This section styles the body, which, for the purposes of this website, defines the root background and is the "<body>" element in HTML.*/
+body{background-color:var(--ui-color);}
+
+/*This section styles divisions (i.e. sections), which are the "<div>" element in HTML.*/
+div.main-panel{width:80vw; height:80vh; position:absolute; top:50%; left:50%; right:-50%; transform:translate(-50%,-50%); padding:1em; overflow:hidden; background-color:var(--ui-darkest);}
+div.link-panel{padding-top:1em; text-align:center;}
+
+/*This section styles images, which are the "<img>" element in HTML.*/
+img.shmagiggins{height:100%; float:right;}
+
+/*This section styles paragraphs, which are the "<p>" element in HTML.*/
+p.spoken{color:var(--text-color);}
+p.action{color:var(--text-darker); font-style:italic; font-size:0.8em;}
+
+/*This section styles links, which are the "<a>" element in HTML. New link template:
+a.LINKNAME{color:var(--COLORVARIABLE); background-color:var(--ui-darkest); border-style:solid; border-width:0.1em; border-color:var(--COLORVARIABLE);}
+a.LINKNAME:hover{color:var(--ui-darkest); background-color:var(--COLORVARIABLE); border-color:transparent;}
+Copy, paste, and replace "LINKNAME" and "COLORVARIABLE" with their respective values.*/
+a#linku{border-radius:100em; padding:0.3em; text-decoration:none;}
+a.twitter{color:var(--twitter-color); background-color:var(--ui-darkest); border-style:solid; border-width:0.1em; border-color:var(--twitter-color);}
+a.twitter:hover{color:var(--ui-darkest); background-color:var(--twitter-color); border-color:transparent;}
+a.instagram{color:var(--instagram-color); background-color:var(--ui-darkest); border-style:solid; border-width:0.1em; border-color:var(--instagram-color);}
+a.instagram:hover{color:var(--ui-darkest); background-color:var(--instagram-color); border-color:transparent;}
+a.patreon{color:var(--patreon-color); background-color:var(--ui-darkest); border-style:solid; border-width:0.1em; border-color:var(--patreon-color);}
+a.patreon:hover{color:var(--ui-darkest); background-color:var(--patreon-color); border-color:transparent;}
+
+/*This section styles spans, which are the "<span>" element in HTML; they are used to manually style a part of text.*/
+span.name{color:var(--name-color);}
+span.commissions{color:var(--commissions-color);}
+span.nsfw{color:var(--nsfw-color);}
+span.twitter{color:var(--twitter-color);}
+span.instagram{color:var(--instagram-color);}
+
+/*Website created by Skweezu*/
